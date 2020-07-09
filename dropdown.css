@@ -1,0 +1,123 @@
+body{
+        
+        background: rgb(238,174,202);
+        background: -moz-radial-gradient(circle, rgba(238,174,202,1) 4%, rgba(29,177,215,0.3393732492997199) 100%);
+        background: -webkit-radial-gradient(circle, rgba(238,174,202,1) 4%, rgba(29,177,215,0.3393732492997199) 100%);
+        background: radial-gradient(circle, rgba(238,174,202,1) 4%, rgba(29,177,215,0.3393732492997199) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#1db1d7",GradientType=1);
+        margin: 0;
+        padding: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*nav{
+    width: 100%;
+    background: #fff;
+}*/
+nav>ul { /* child selector*/
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration:none;
+    background-color: #fff;
+    color:#111;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-right: 1px solid rgb(224, 79, 79);
+}
+/*
+nav ul ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: none;
+
+}
+nav ul ul li{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: none;
+    width: 300px;
+}
+nav ul ul li a {
+    border-right: none;
+    display: block;
+}
+*/
+
+
+nav ul li a:hover {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(255, 217, 0,1);
+    color: #fff;
+    border: none;
+    transition: ease all 0.6s;
+    border-left: 5px  solid rgb(111,0,17)
+}
+nav ul ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: none;
+
+}
+nav ul  ul li a{
+    width: 200px;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+ul li:hover>ul{
+    display: block;
+}
+#BeforeandAfter article{
+    display: flex;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#BeforeandAfter article h1{
+    font-size: 50px;
+    letter-spacing: 3px;
+    background: white;
+    color: crimson;
+    padding: 20px;
+    border-radius:5px;
+    box-shadow: inset 9px 6px 50px -5px crimson;
+    text-shadow:9px 9px 6px 40px green;
+    
+    /*box-shadow: 19px 13px 7px 1px crimson;*/
+}
+#BeforeandAfter article h1::before{
+    height: 100px;
+    width: 100px;
+    background: red;
+  /*  content: "fullstack is good.....";*/
+  
+}
+
+#BeforeandAfter article h1::after{
+    height: 100px;
+    width: 100px;
+    background: red;
+    /*content: "fullstack is good..... 😃😄😆😊:)"*/
+}
+
+#SliderBlock article {
+    background:url("../dropDownMenu/images/category_403ff580.png");
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
